@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer</title>
+    <link rel="stylesheet" href="theme.css">
+    <script src="script.js" type="module" defer></script>
+</head>
+
+<body>
+    <main>
+        <aside id="quickAccess">
+            <div class="container">
+                <div class="quick-access-btn">
+                    <img src="icons/local-disk.svg">
+                    <span>Диск C</span>
+                </div>
+                <div class="quick-access-btn">
+                    <img src="icons/documents.svg">
+                    <span>Документы</span>
+                </div>
+                <div class="quick-access-btn">
+                    <img src="icons/desktop.svg">
+                    <span>Рабочий стол</span>
+                </div>
+            </div>
+        </aside>
+        <div class="found-results container">
+            <nav id="addressbar">
+                <div class="mini-container">
+                    <div class="btns">
+                        <button id="backBtn" class="circle-btn">&lt;</button>
+                        <button id="levelUpBtn" class="circle-btn">↑</button>
+                    </div>
+                    <div class="location">
+                        <input type="text" id="addressbarLocation" readonly>
+                    </div>
+                </div>
+            </nav>
+            <ul id="foundResults">
+                <li data-type="folder">
+                    <img src="icons/min-folder.svg">
+                    <span>Первая папка</span>
+                </li>
+                <li data-type="file">
+                    <img src="icons/file.svg">
+                    <span>Первый файл</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>
