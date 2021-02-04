@@ -10,9 +10,9 @@ module.exports = function setupElectron() {
 			},
 		});
 
+		// win.webContents.openDevTools(); // For debug
 		win.setResizable(false);
 		win.removeMenu();
-		win.webContents.openDevTools();
 		win.loadFile('web/index.html');
 	}
 
