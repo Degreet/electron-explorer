@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^11.2.1"
+  },
+  "dependencies": {
+    "stream-to-string": "^1.2.0"
   }
 }

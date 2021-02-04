@@ -1,7 +1,7 @@
 const fs = require('fs'),
 	fsp = fs.promises;
 
-async function readDir(path) {
+module.exports = async function readDir(path) {
 	const dir = await fsp.readdir(path);
 	const folders = [];
 	const files = [];
@@ -24,9 +24,4 @@ async function readDir(path) {
 	});
 
 	return [...folders, ...files];
-}
-
-(async () => {
-	console.log(await readDir('C:/'));
-	while (true) {}
-})();
+};

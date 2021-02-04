@@ -12,6 +12,7 @@ module.exports = function setupElectron() {
 
 		win.setResizable(false);
 		win.removeMenu();
+		win.webContents.openDevTools();
 		win.loadFile('web/index.html');
 	}
 
