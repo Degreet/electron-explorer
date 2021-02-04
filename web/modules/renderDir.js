@@ -16,7 +16,7 @@ export default async function renderDir(dir) {
 function build(dir) {
 	function buildItem(item) {
 		return /*html*/ `
-            <li data-type="${item.type}">
+            <li data-type="${item.type}" data-name="${item.name}">
                 <img src="icons/${item.type == 'folder' ? 'min-folder' : 'file'}.svg">
                 <span>${item.name}</span>
             </li>
